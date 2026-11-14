@@ -2,6 +2,8 @@ FROM trafex/php-nginx:3.6.0 AS base
 
 USER root
 
+RUN apk upgrade --no-cache
+
 RUN apk add --no-cache \
     php83 \
     php83-common \
