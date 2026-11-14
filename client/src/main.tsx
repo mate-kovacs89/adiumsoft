@@ -1,10 +1,14 @@
+import { RouterProvider } from "@tanstack/react-router";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { UnitSystemProvider } from "./components/UnitSystemProvider.tsx";
 import "./index.css";
-import { Greeter } from "./Greeter.tsx";
+import { router } from "./router.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Greeter />
+    <UnitSystemProvider>
+      <RouterProvider router={router} />
+    </UnitSystemProvider>
   </StrictMode>,
 );
