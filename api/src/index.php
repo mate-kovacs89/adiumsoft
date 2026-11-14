@@ -5,8 +5,8 @@ namespace ADS\TakeHome;
 include __DIR__ . "/../vendor/autoload.php";
 
 use ADS\TakeHome\Controllers\ExampleController;
-use ADS\TakeHome\Framework\MySQL;
-use ADS\TakeHome\Framework\Router;
+use ADS\TakeHome\Framework\Database\MySQL;
+use ADS\TakeHome\Framework\Routing\Router;
 
 $router = new Router();
 

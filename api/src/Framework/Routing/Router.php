@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ADS\TakeHome\Framework;
+namespace ADS\TakeHome\Framework\Routing;
 
+use ADS\TakeHome\Framework\Http\HttpRequest;
+use ADS\TakeHome\Framework\Http\HttpResponseInterface;
+use ADS\TakeHome\Framework\Http\JsonHttpResponse;
 use Closure;
 use Exception;
 
